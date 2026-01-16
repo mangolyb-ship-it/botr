@@ -2,7 +2,7 @@ import random
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-BOT_TOKEN = "8512595538:AAG6E8ExUo_VEtPgtdJLOpfFAeQbGI1KQZw"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = 1514979458
 
 RESPONSES = [
@@ -57,4 +57,5 @@ def main():
     app.run_polling()
 
 if __name__ == '__main__':
+
     main()
